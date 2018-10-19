@@ -1085,4 +1085,4 @@ if (err) console.error(err);
 })
 });
 
-client.login("NTAwODM3MDQ3OTgwNzg1Njc5.DqWZOQ.g52E0a0rN9pONXMWsZ4rEmC5Ozo")
+client.login(process.env.BOT_TOKEN);
