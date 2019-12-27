@@ -1,10 +1,10 @@
 const Discord = require("discord.js");
 const client = new Discord.Client({ fetchAllMembers: true });
 
-const PREFIX = "ts!";
+const PREFIX = "k$";
 
 function commandIs(str, msg){
-    return msg.content.toLowerCase().startsWith('ts!' + str);
+    return msg.content.toLowerCase().startsWith('k$' + str);
 }
 
 function pluck(array) {
@@ -21,19 +21,13 @@ function hasRole(mem, role) {
   }
 
 
-//
-client.on('ready',  () => {
-  console.log('By : ! Ð𝓮𝓮M💎N12.♕);
-  console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
-  console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
-  console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
-});
+
 /////////////////////////////////////////////
 
 /////////////////////////////////////////////
 
 client.on("message", message => {
-     if (message.content === "ts!help") {
+     if (message.content === "k$help") {
          message.react('👌')
          if(!message.channel.guild) return message.reply('** This command only for servers **');
         message.reply("** تم الاريسال فـ الخاص :heavy_check_mark: **")
@@ -41,7 +35,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
- if (message.content === "ts!help") {
+ if (message.content === "k$help") {
   const embed = new Discord.RichEmbed()
       .setColor("#ffff00")
       .setThumbnail(message.author.avatarURL)
@@ -49,36 +43,36 @@ client.on("message", message => {
 
  **
 ╔[❖════════════❖]╗
-                  Prefix = ' ts! '
+                  Prefix = ' k$ '
 ╚[❖════════════❖]╝
 
 ╔[❖════════════❖]╗
                     اوامر عامة
 ╚[❖════════════❖]╝
 
-❖ ts!members ➾ معلومات الاعضاء
+❖ k$members ➾ معلومات الاعضاء
 
-❖ ts!avatar ➾ شعار حسابك
+❖ k$avatar ➾ شعار حسابك
 
-❖ ts!image  ➾ شعار السيرفر
+❖ k$image  ➾ شعار السيرفر
 
-❖ ts!stats ➾ معلومات عن البوت سرعة البوت والخادم ايضا
+❖ k$stats ➾ معلومات عن البوت سرعة البوت والخادم ايضا
 
-❖ ts!id ➾ اي دي
+❖ k$id ➾ اي دي
 
-❖ ts!Date ➾ التاريخ
+❖ k$Date ➾ التاريخ
 
-❖ ts!ping ➾ عرض سرعه اتصال البوت
+❖ k$ping ➾ عرض سرعه اتصال البوت
 
-❖ ts!bot ➾ معلومات البوت
+❖ k$bot ➾ معلومات البوت
 
-❖ ts!server ➾ معلومات السيرفر
+❖ k$server ➾ معلومات السيرفر
 
-❖ ts!hphoto ➾ اذا ترد صورة من فريق الدعم لى سيرفر/أليك/الصديقكا
+❖ k$hphoto ➾ اذا ترد صورة من فريق الدعم لى سيرفر/أليك/الصديقكا
 
-❖ ts!hintro ➾ اذا تريد انترو لي قناتك اليوتيوب
+❖ k$hintro ➾ اذا تريد انترو لي قناتك اليوتيوب
 
-❖ ts!fk ➾ لعبه الفواكه
+❖ k$fk ➾ لعبه الفواكه
 **
 
 `)
@@ -88,13 +82,12 @@ message.author.sendEmbed(embed)
 
 }
 });
-});
 /////////////////////////////////////////////
 
 /////////////////////////////////////////////
 
 client.on("message", message => {
-     if (message.content === "ts!help") {
+     if (message.content === "k$help") {
          message.react('👌')
          if(!message.channel.guild) return message.reply('** This command only for servers **');
         message.reply("** تم الاريسال فـ الخاص :heavy_check_mark: **")
@@ -102,7 +95,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
- if (message.content === "ts!help") {
+ if (message.content === "k$help") {
   const embed = new Discord.RichEmbed()
       .setColor("#ffff00")
       .setThumbnail(message.author.avatarURL)
@@ -110,28 +103,28 @@ client.on("message", message => {
 
  **
 ╔[❖════════════❖]╗
-                  Prefix = ' ts! '
+                  Prefix = ' k$ '
 ╚[❖════════════❖]╝
 
 ╔[❖════════════❖]╗
                      أوامر الميوزك
 ╚[❖════════════❖]╝
 
-❖ ts!play ➾ لبدء الأغنيه (لازم رابط الاغنيه او أسم الأغنيه )لكي يدخل لك البوت
+❖ k$play ➾ لبدء الأغنيه (لازم رابط الاغنيه او أسم الأغنيه )لكي يدخل لك البوت
 
-❖ ts!skip ➾ لي تخطي الأغنيه
+❖ k$skip ➾ لي تخطي الأغنيه
 
-❖ ts!pause ➾ لكي يوقف الإنيه مؤقتا
+❖ k$pause ➾ لكي يوقف الإنيه مؤقتا
 
-❖ ts!resume ➾ لكي يكمل الأغنيه
+❖ k$resume ➾ لكي يكمل الأغنيه
 
-❖ ts!leave ➾ لكي يخرج البوت من الروم
+❖ k$leave ➾ لكي يخرج البوت من الروم
 
-❖ ts!vol ➾ اذا تبغا تعلي صوت البوت او توطيه
+❖ k$vol ➾ اذا تبغا تعلي صوت البوت او توطيه
 
-❖ ts!np ➾ لتعرف معلومات الأغنيه كم ناقص لها على الأنتهاء
+❖ k$np ➾ لتعرف معلومات الأغنيه كم ناقص لها على الأنتهاء
 
-❖ ts!queue ➾ لتعرف الأغاني الذي موجوده في القائمه
+❖ k$queue ➾ لتعرف الأغاني الذي موجوده في القائمه
 **
 
 `)
@@ -142,7 +135,7 @@ message.author.sendEmbed(embed)
 }
 });
 client.on("message", message => {
- if (message.content === "ts!help") {
+ if (message.content === "k$help") {
   const embed = new Discord.RichEmbed()
       .setColor("#ffff00")
       .setThumbnail(message.author.avatarURL)
@@ -150,34 +143,34 @@ client.on("message", message => {
 
  **
 ╔[❖════════════❖]╗
-                  Prefix = ' ts! '
+                  Prefix = ' k$ '
 ╚[❖════════════❖]╝
 
 ╔[❖════════════❖]╗
                      اوامر الأداره
 ╚[❖════════════❖]╝
 
-❖ ts!mute ➾ اذا تريد تعطي شخص ميوت
+❖ k$mute ➾ اذا تريد تعطي شخص ميوت
 
-❖ ts!unmute ➾ لي ألغاء الميوت لي شخص
+❖ k$unmute ➾ لي ألغاء الميوت لي شخص
 
-❖ ts!kick ➾ لي أعطاء العضو كيك
+❖ k$kick ➾ لي أعطاء العضو كيك
 
-❖ ts!ban ➾ لي أعطاء العضو بان
+❖ k$ban ➾ لي أعطاء العضو بان
 
-❖ ts!warn ➾ لي اعطاء العضو تحظير ملاحظه: يجب ان يكون في رول بأسم Warn1 + Warn2
+❖ k$warn ➾ لي اعطاء العضو تحظير ملاحظه: يجب ان يكون في رول بأسم Warn1 + Warn2
 
-❖ ts!setcooldown on/off ➾ لي عمل وقت محدد للكتابه فلروم
+❖ k$setcooldown on/off ➾ لي عمل وقت محدد للكتابه فلروم
 
-❖ ts!setrole ➾ لي عمل رولات بلريأكشن
+❖ k$setrole ➾ لي عمل رولات بلريأكشن
 
-❖ ts!setMedia/sm ➾ اذا تبغا تحددروم مخصص للصور
+❖ k$setMedia/sm ➾ اذا تبغا تحددروم مخصص للصور
 
-❖ ts!toggleMedia/tm ➾ اذا تبغا تخلي روم محدد لي الصور ON/OFF
+❖ k$toggleMedia/tm ➾ اذا تبغا تخلي روم محدد لي الصور ON/OFF
 
-❖ ts!infoMedia/im ➾ اذا تبغا تعرف معلومات الروم حق الصور
+❖ k$infoMedia/im ➾ اذا تبغا تعرف معلومات الروم حق الصور
 
-❖ ts!roll 2/3/4 ➾ لي العمل قرعه عشوائيه
+❖ k$roll 2/3/4 ➾ لي العمل قرعه عشوائيه
 
 
 ╔[❖══════════════════════════════════❖]╗
@@ -196,7 +189,7 @@ message.author.sendEmbed(embed)
 });
 //
 client.on('message', message => {
-     if (message.content === "ts!ping") {
+     if (message.content === "k$ping") {
       const embed = new Discord.RichEmbed()
 
   .setColor("RANDOM")
@@ -209,7 +202,7 @@ client.on('message', message => {
 });
 //
 client.on('message', message => {
-    if (message.content.startsWith("ts!stats")) {
+    if (message.content.startsWith("k$stats")) {
     message.channel.send({
         embed: new Discord.RichEmbed()
             .setColor('RANDOM')
@@ -242,7 +235,7 @@ function timeCon(time) {
 
 //
 client.on('message', message => {
-    if (message.content.startsWith("ts!avatar")) {
+    if (message.content.startsWith("k$avatar")) {
         var mentionned = message.mentions.users.first();
     var iiTzK;
       if(mentionned){
@@ -263,7 +256,7 @@ client.on("message", message => {
 
   let command = message.content.split(" ")[0];
 
-  if (command === "ts!mute") {
+  if (command === "k$mute") {
         if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply("** لا يوجد لديك برمشن 'Manage Roles' **").catch(console.error);
   let user = message.mentions.users.first();
   let modlog = client.channels.find('name', 'mute-log');
@@ -297,7 +290,7 @@ client.on("message", message => {
 
   let command = message.content.split(" ")[0];
 
-  if (command === "ts!unmute") {
+  if (command === "k$unmute") {
         if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply("** لا يوجد لديك برمشن 'Manage Roles' **").catch(console.error);
   let user = message.mentions.users.first();
   let modlog = client.channels.find('name', 'mute-log');
@@ -325,7 +318,7 @@ client.on("message", message => {
 
 });
 
-var prefix = "ts!";
+var prefix = "k$";
 
 client.on('message', message => {
   if (message.author.bot) return;
@@ -358,7 +351,7 @@ if (command == "embed") {
 });
 
 client.on('message', message => {
-    if (message.content == 'ts!server') {
+    if (message.content == 'k$server') {
         var servername = message.guild.name
         var اونر = message.guild.owner
         var اعضاء = message.guild.memberCount
@@ -386,11 +379,11 @@ client.on('message', message => {
 
 });
 
-var prefix = 'ts!';
+var prefix = 'k$';
 
 
 client.on('message', message => {
-    if (message.content.startsWith("ts!avatar")) {
+    if (message.content.startsWith("k$avatar")) {
         var mentionned = message.mentions.users.first();
     var x5bzm;
       if(mentionned){
@@ -407,7 +400,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-if (message.content.startsWith(prefix + "ts!servers")) {
+if (message.content.startsWith(prefix + "k$servers")) {
          if(!message.author.id === '285236833804222464') return;
 var gimg;
 var gname;
@@ -438,7 +431,7 @@ Server MemberCount : **${gmemb} **
 
 client.on('message', message => {  // ui
 if (!message.channel.guild) return;
-var prefix = "ts!";
+var prefix = "k$";
   if (message.content ===  prefix + 'ui') {
 let user = message.mentions.users.first();
  if (!user) { user = message.author }
@@ -459,7 +452,7 @@ let embed = new Discord.RichEmbed()
 }
 });
 
- var prefix = "ts!";
+ var prefix = "k$";
 client.on('message', message => {
          if (message.content === prefix + "Date") {
          if (!message.channel.guild) return message.reply('** This command only for servers **');
@@ -523,7 +516,7 @@ client.on('message', message => {
 });
 
 client.on("message", message => {
-    const prefix = "ts!"
+    const prefix = "k$"
 
           if(!message.channel.guild) return;
    if(message.author.bot) return;
@@ -542,31 +535,31 @@ client.on("message", message => {
   });
 
 client.on('message', message => {
-   if (message.content === "ts!roll 1") {
+   if (message.content === "k$roll 1") {
   message.channel.sendMessage(Math.floor(Math.random() * 25));
     }
 });
 
 client.on('message', message => {
-   if (message.content === "ts!roll 2") {
+   if (message.content === "k$roll 2") {
   message.channel.sendMessage(Math.floor(Math.random() * 50));
     }
 });
 
 client.on('message', message => {
-   if (message.content === "ts!roll 3") {
+   if (message.content === "k$roll 3") {
   message.channel.sendMessage(Math.floor(Math.random() * 75));
     }
 });
 
 client.on('message', message => {
-   if (message.content === "ts!roll 4") {
+   if (message.content === "k$roll 4") {
   message.channel.sendMessage(Math.floor(Math.random() * 100));
     }
 });
 
 client.on('message', message => {
-     if (message.content === "ts!bot") {
+     if (message.content === "k$bot") {
             if(!message.channel.guild) return message.reply('** This command only for servers **');
      let embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -579,7 +572,7 @@ message.channel.sendEmbed(embed);
 });
 
 client.on('message', message => {
-    if(message.content == 'ts!members') {
+    if(message.content == 'k$members') {
        message.react(":white_check_mark:")
     const embed = new Discord.RichEmbed()
     .setDescription(`**Members info🔋
@@ -670,7 +663,7 @@ Server MemberCount : **${gmemb} **
 });
 
 client.on('message', message => {
-var prefix = "ts!";
+var prefix = "k$";
 
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
@@ -706,7 +699,7 @@ if (message.content.startsWith(prefix + 'watch')) {
 
 
 client.on('message' , message => {
-var prefix = "ts!"
+var prefix = "k$"
 
 if (message.author.bot) return;
 if (message.content.startsWith(prefix + "rep")) {
@@ -768,7 +761,7 @@ message.channel.send(embed);
 
 //
 client.on('message', message => {
-var prefix = "ts!"
+var prefix = "k$"
   if (message.author.iiTz) return;
   if (!message.content.startsWith(prefix)) return;
   var command = message.content.split(" ")[0];
@@ -1112,7 +1105,7 @@ client.on('message', async message => {
     if(cooldown[message.guild.id].toggled == "off")return;
     if(cooldowntimer.has(message.author)){
         message.delete();
-        message.reply('You can't send another message now, please wait.').then(m => m.delete(3000));
+        message.reply('You cant send another message now, please wait.').then(m => m.delete(3000));
     }else{
         cooldowntimer.add(message.author);
         setTimeout(() => {
@@ -1239,7 +1232,7 @@ if (message.author.bot) return;
  }
  // By Alpha Codes - AboKhalil 26/7/2019
 });
-قconst Util = require('discord.js'); //البكجات
+const Util = require('discord.js'); //البكجات
 const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 const YouTube = require('simple-youtube-api');
@@ -1284,7 +1277,7 @@ client.on('message', async msg => {
             return msg.channel.sendMessage("I don't have enough permissions to insert a URLs!")
         }
  
-        if (url.match(/^https?://(www.youtube.com|youtube.com)/playlist(.*)$/)) {
+        if (url.match(/^https?://(www.youtube.com|youtube.com)/playlist)) {
  
             const playlist = await youtube.getPlaylist(url);
             const videos = await playlist.getVideos();
