@@ -78,11 +78,55 @@ client.on("message", message => {
 
 ❖ ts!hintro ➾ اذا تريد انترو لي قناتك اليوتيوب
 
+**
 
+`)
+
+
+message.author.sendEmbed(embed)
+
+}
+});
+});
+/////////////////////////////////////////////
+
+/////////////////////////////////////////////
+
+client.on("message", message => {
+     if (message.content === "ts!help") {
+         message.react('👌')
+         if(!message.channel.guild) return message.reply('** This command only for servers **');
+        message.reply("** تم الاريسال فـ الخاص :heavy_check_mark: **")
+     }
+});
+
+client.on("message", message => {
+ if (message.content === "ts!help") {
+  const embed = new Discord.RichEmbed()
+      .setColor("#ffff00")
+      .setThumbnail(message.author.avatarURL)
+      .setDescription(`
+
+ **
+╔[❖════════════❖]╗
+                  Prefix = ' ts! '
+╚[❖════════════❖]╝
+
+╔[❖════════════❖]╗
+                     اوامر الأداره
+╚[❖════════════❖]╝
+
+❖ ts!mute ➾ اذا تريد تعطي شخص ميوت
+
+❖ ts!unmute ➾ لي ألغاء الميوت لي شخص
+
+❖ ts!roll 2/3/4 ➾ لي العمل قرعه عشوائيه
+
+❖  ➾
 ╔[❖══════════════════════════════════❖]╗
 
 
-bot invite link: https://discordapp.com/oauth2/authorize?client_id=335893077510324224&scope=bot&permissions=2146958591
+bot invite link: 
 
 ╚[❖══════════════════════════════════❖]╝
 **
@@ -94,7 +138,6 @@ message.author.sendEmbed(embed)
 
 }
 });
-
 //
 client.on('message', message => {
      if (message.content === "ts!ping") {
@@ -560,7 +603,7 @@ client.on('message', message => {
 });
 
 client.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', 'chat');
+    let channel = member.guild.channels.find('name', 'Welcome');
     let memberavatar = member.user.avatarURL
       if (!channel) return;
     let embed = new Discord.RichEmbed()
@@ -1084,5 +1127,9 @@ fs.writeFile('profile.json', JSON.stringify(profile), (err) => {
 if (err) console.error(err);
 })
 });
+client.on('guildMemberAdd', member=> { 
+   let rwlc = JSON.parse(fs.readFileSync('./AutoRole.json' , 'utf8')); 
+    member.addRole(member.guild.roles.find("name","SKeLToN")); 
+    }); 
 
 client.login(process.env.BOT_TOKEN);
